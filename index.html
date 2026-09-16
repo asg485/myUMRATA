@@ -562,12 +562,36 @@
     }
     .create-extra-section-box input[type="text"] {
       flex: 1;
+      min-width: 0;
+      width: 100%;
+      box-sizing: border-box;
       padding: 9px 12px;
       border: 1px solid var(--border);
       border-radius: 8px;
       font-size: 0.88rem;
       outline: none;
       background: #fff;
+    }
+
+    /* Mobile: prevent the create-folder row from overflowing its card */
+    .create-extra-folder-row {
+      display: flex;
+      gap: 8px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    @media (max-width: 600px) {
+      .create-extra-folder-row {
+        flex-direction: column;
+      }
+
+      .create-extra-folder-row input[type="text"],
+      .create-extra-folder-row .btn-create-section {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+      }
     }
     .create-extra-section-box input[type="text"]:focus {
       border-color: var(--primary);
@@ -1861,7 +1885,7 @@
 <span>📂</span> Buat Sub Folder Dokumen Lainnya
         </h4>
 <p style="font-size:0.78rem; color:var(--text-muted); margin-bottom:8px;">Butuh folder khusus seperti Asuransi, Kartu Nama, atau lainnya?</p>
-<div style="display:flex; gap:8px;">
+<div class="create-extra-folder-row">
 <input id="input-new-folder-title" onkeydown="if(event.key==='Enter') createExtraFolder()" placeholder="Nama sub folder (mis: Asuransi)..." type="text"/>
 <button class="btn-create-section" onclick="createExtraFolder()" type="button">+ Buat Folder</button>
 </div>
