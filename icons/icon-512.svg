@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+<defs>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#fff4b0"/><stop offset=".22" stop-color="#f6d66a"/>
+<stop offset=".55" stop-color="#c9972b"/><stop offset=".78" stop-color="#ffe58a"/>
+<stop offset="1" stop-color="#9a6a12"/>
+</linearGradient>
+<radialGradient id="bg"><stop offset="0" stop-color="#161616"/><stop offset="1" stop-color="#000000"/></radialGradient>
+</defs>
+<rect width="512" height="512" rx="96" fill="url(#bg)"/>
+<circle cx="256" cy="230" r="150" fill="none" stroke="url(#gold)" stroke-width="18"/>
+<path d="M145 305 Q256 245 367 305" fill="none" stroke="url(#gold)" stroke-width="15" stroke-linecap="round"/>
+<path d="M175 292 V210 L256 155 L337 210 V292" fill="none" stroke="url(#gold)" stroke-width="18" stroke-linejoin="round"/>
+<path d="M215 292 V245 H297 V292" fill="none" stroke="url(#gold)" stroke-width="14"/>
+<text x="256" y="388" text-anchor="middle" font-family="Arial,sans-serif" font-size="58" font-weight="800" fill="url(#gold)">myUMRATA</text>
+</svg>
