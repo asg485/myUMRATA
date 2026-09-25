@@ -1,7 +1,7 @@
 // myUMRATA — Service Worker
 // Offline-first PWA for GitHub Pages
 
-const CACHE_NAME = 'myumrata-v4';
+const CACHE_NAME = 'myumrata-v5';
 
 const CORE_ASSETS = [
   './',
